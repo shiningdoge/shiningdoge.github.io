@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$SHDOGE $SHDOGE $SHDOGE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ff3300', /* Custom Primary Color (Blue-700) */
+          }
+        },
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .funnel-300 {
+      font-family: "Funnel Display", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    .funnel-500 {
+      font-family: "Funnel Display", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    .funnel-800 {
+      font-family: "Funnel Display", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 800;
+      font-style: normal;
+    }
+
+    .poppins-light {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .poppins-medium {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    .poppins-semibold {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    .poppins-bold {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    body {
+      font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: rgb(60, 10, 10);
+    }
+
+    a {
+      color: rgb(60, 10, 10);
+    }
+
+    .ShLink {
+      display: inline-block;
+      background: white;
+      color: rgb(60, 10, 10);
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+
+    .pulse {
+      /*box-shadow: 0 0 5px 2px rgba(0, 255, 0, 0.8);*/
+      animation: pulse 0.7s infinite alternate ease-in-out;
+      opacity: 0.9;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 0.9;
+      }
+
+      100% {
+        transform: scale(1.2);
+        opacity: 0.5;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Fixed Navbar -->
+  <!--<header class="fixed top-0 left-0 w-full bg-white shadow-md">
+        <div class="container mx-auto flex items-center justify-between px-6 py-4">
+            
+            <a href="#" class="text-2xl font-bold text-blue-600">MyBrand</a>
+
+            <nav class="hidden space-x-6 md:flex">
+                <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Services</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+            </nav>
+
+            <button id="menu-btn" class="block md:hidden">
+                <svg class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <nav id="mobile-menu" class="hidden flex flex-col space-y-4 bg-white px-6 py-4 shadow-md md:hidden">
+            <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600">Services</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+        </nav>
+    </header>-->
+
+  <!-- Page Content (to push content below navbar) -->
+  <main>
+    <section>
+
+      <div class="relative isolate overflow-hidden bg-gray-900 pt-16 pb-32">
+        <img src="/img/image00018.jpg" alt=""
+          class="absolute inset-0 -z-10 size-full object-cover object-left sm:object-center">
+        <!--<div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+          aria-hidden="true">
+          <div class="aspect-1097/845 w-[68.5625rem] bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+          </div>
+        </div>-->
+        <div
+          class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+          aria-hidden="true">
+          <div class="aspect-1097/845 w-[68.5625rem] bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+          </div>
+        </div>
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:mx-0">
+            <div><img src="/img/logo.png" alt="logo" width="180px" height="180px"></div>
+            <h2 class="funnel-800 text-5xl text-white sm:text-7xl">Shining Doge</h2>
+            <h4 class="font-mono font-light text-5xl text-white text-xl">$SHDOGE</h4>
+
+            <!--SOCIAL-->
+            <div class="w-full h-auto py-8 flex items-center gap-4 flex-wrap">
+              <button
+                class="w-10 h-10 flex items-center justify-center rounded-lg bg-white group transition-all duration-300">
+                <svg class="transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg"
+                  width="28" height="28" viewBox="0 0 72 72" fill="none">
+                  <path
+                    d="M46.4927 38.6403L47.7973 30.3588H39.7611V24.9759C39.7611 22.7114 40.883 20.4987 44.4706 20.4987H48.1756V13.4465C46.018 13.1028 43.8378 12.9168 41.6527 12.8901C35.0385 12.8901 30.7204 16.8626 30.7204 24.0442V30.3588H23.3887V38.6403H30.7204V58.671H39.7611V38.6403H46.4927Z"
+                    fill="#337FFF" />
+                </svg>
+              </button>
+
+              <button
+                class="w-10 h-10 flex items-center justify-center group rounded-lg bg-white group transition-all duration-300">
+                <svg class="transition-all duration-300 group-hover:scale-110" width="28" height="28"
+                  viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M27.4456 35.7808C27.4456 31.1786 31.1776 27.4468 35.7826 27.4468C40.3875 27.4468 44.1216 31.1786 44.1216 35.7808C44.1216 40.383 40.3875 44.1148 35.7826 44.1148C31.1776 44.1148 27.4456 40.383 27.4456 35.7808ZM22.9377 35.7808C22.9377 42.8708 28.6883 48.618 35.7826 48.618C42.8768 48.618 48.6275 42.8708 48.6275 35.7808C48.6275 28.6908 42.8768 22.9436 35.7826 22.9436C28.6883 22.9436 22.9377 28.6908 22.9377 35.7808ZM46.1342 22.4346C46.1339 23.0279 46.3098 23.608 46.6394 24.1015C46.9691 24.595 47.4377 24.9797 47.9861 25.2069C48.5346 25.4342 49.1381 25.4939 49.7204 25.3784C50.3028 25.2628 50.8378 24.9773 51.2577 24.5579C51.6777 24.1385 51.9638 23.6041 52.0799 23.0222C52.1959 22.4403 52.1367 21.8371 51.9097 21.2888C51.6828 20.7406 51.2982 20.2719 50.8047 19.942C50.3112 19.6122 49.7309 19.436 49.1372 19.4358H49.136C48.3402 19.4361 47.5771 19.7522 47.0142 20.3144C46.4514 20.8767 46.1349 21.6392 46.1342 22.4346ZM25.6765 56.1302C23.2377 56.0192 21.9121 55.6132 21.0311 55.2702C19.8632 54.8158 19.0299 54.2746 18.1538 53.4002C17.2777 52.5258 16.7354 51.6938 16.2827 50.5266C15.9393 49.6466 15.533 48.3214 15.4222 45.884C15.3009 43.2488 15.2767 42.4572 15.2767 35.781C15.2767 29.1048 15.3029 28.3154 15.4222 25.678C15.5332 23.2406 15.9425 21.918 16.2827 21.0354C16.7374 19.8682 17.2789 19.0354 18.1538 18.1598C19.0287 17.2842 19.8612 16.7422 21.0311 16.2898C21.9117 15.9466 23.2377 15.5406 25.6765 15.4298C28.3133 15.3086 29.1054 15.2844 35.7826 15.2844C42.4598 15.2844 43.2527 15.3106 45.8916 15.4298C48.3305 15.5408 49.6539 15.9498 50.537 16.2898C51.7049 16.7422 52.5382 17.2854 53.4144 18.1598C54.2905 19.0342 54.8308 19.8682 55.2855 21.0354C55.6289 21.9154 56.0351 23.2406 56.146 25.678C56.2673 28.3154 56.2915 29.1048 56.2915 35.781C56.2915 42.4572 56.2673 43.2466 56.146 45.884C56.0349 48.3214 55.6267 49.6462 55.2855 50.5266C54.8308 51.6938 54.2893 52.5266 53.4144 53.4002C52.5394 54.2738 51.7049 54.8158 50.537 55.2702C49.6565 55.6134 48.3305 56.0194 45.8916 56.1302C43.2549 56.2514 42.4628 56.2756 35.7826 56.2756C29.1024 56.2756 28.3125 56.2514 25.6765 56.1302ZM25.4694 10.9322C22.8064 11.0534 20.9867 11.4754 19.3976 12.0934C17.7518 12.7316 16.3585 13.5878 14.9663 14.977C13.5741 16.3662 12.7195 17.7608 12.081 19.4056C11.4626 20.9948 11.0403 22.8124 10.9191 25.4738C10.7958 28.1394 10.7676 28.9916 10.7676 35.7808C10.7676 42.57 10.7958 43.4222 10.9191 46.0878C11.0403 48.7494 11.4626 50.5668 12.081 52.156C12.7195 53.7998 13.5743 55.196 14.9663 56.5846C16.3583 57.9732 17.7518 58.8282 19.3976 59.4682C20.9897 60.0862 22.8064 60.5082 25.4694 60.6294C28.138 60.7506 28.9893 60.7808 35.7826 60.7808C42.5759 60.7808 43.4286 60.7526 46.0958 60.6294C48.759 60.5082 50.5774 60.0862 52.1676 59.4682C53.8124 58.8282 55.2066 57.9738 56.5989 56.5846C57.9911 55.1954 58.8438 53.7998 59.4842 52.156C60.1026 50.5668 60.5268 48.7492 60.6461 46.0878C60.7674 43.4202 60.7956 42.57 60.7956 35.7808C60.7956 28.9916 60.7674 28.1394 60.6461 25.4738C60.5248 22.8122 60.1026 20.9938 59.4842 19.4056C58.8438 17.7618 57.9889 16.3684 56.5989 14.977C55.2088 13.5856 53.8124 12.7316 52.1696 12.0934C50.5775 11.4754 48.7588 11.0514 46.0978 10.9322C43.4306 10.811 42.5779 10.7808 35.7846 10.7808C28.9913 10.7808 28.138 10.809 25.4694 10.9322Z"
+                    fill="url(#paint0_radial_7092_54471)" />
+                  <path
+                    d="M27.4456 35.7808C27.4456 31.1786 31.1776 27.4468 35.7826 27.4468C40.3875 27.4468 44.1216 31.1786 44.1216 35.7808C44.1216 40.383 40.3875 44.1148 35.7826 44.1148C31.1776 44.1148 27.4456 40.383 27.4456 35.7808ZM22.9377 35.7808C22.9377 42.8708 28.6883 48.618 35.7826 48.618C42.8768 48.618 48.6275 42.8708 48.6275 35.7808C48.6275 28.6908 42.8768 22.9436 35.7826 22.9436C28.6883 22.9436 22.9377 28.6908 22.9377 35.7808ZM46.1342 22.4346C46.1339 23.0279 46.3098 23.608 46.6394 24.1015C46.9691 24.595 47.4377 24.9797 47.9861 25.2069C48.5346 25.4342 49.1381 25.4939 49.7204 25.3784C50.3028 25.2628 50.8378 24.9773 51.2577 24.5579C51.6777 24.1385 51.9638 23.6041 52.0799 23.0222C52.1959 22.4403 52.1367 21.8371 51.9097 21.2888C51.6828 20.7406 51.2982 20.2719 50.8047 19.942C50.3112 19.6122 49.7309 19.436 49.1372 19.4358H49.136C48.3402 19.4361 47.5771 19.7522 47.0142 20.3144C46.4514 20.8767 46.1349 21.6392 46.1342 22.4346ZM25.6765 56.1302C23.2377 56.0192 21.9121 55.6132 21.0311 55.2702C19.8632 54.8158 19.0299 54.2746 18.1538 53.4002C17.2777 52.5258 16.7354 51.6938 16.2827 50.5266C15.9393 49.6466 15.533 48.3214 15.4222 45.884C15.3009 43.2488 15.2767 42.4572 15.2767 35.781C15.2767 29.1048 15.3029 28.3154 15.4222 25.678C15.5332 23.2406 15.9425 21.918 16.2827 21.0354C16.7374 19.8682 17.2789 19.0354 18.1538 18.1598C19.0287 17.2842 19.8612 16.7422 21.0311 16.2898C21.9117 15.9466 23.2377 15.5406 25.6765 15.4298C28.3133 15.3086 29.1054 15.2844 35.7826 15.2844C42.4598 15.2844 43.2527 15.3106 45.8916 15.4298C48.3305 15.5408 49.6539 15.9498 50.537 16.2898C51.7049 16.7422 52.5382 17.2854 53.4144 18.1598C54.2905 19.0342 54.8308 19.8682 55.2855 21.0354C55.6289 21.9154 56.0351 23.2406 56.146 25.678C56.2673 28.3154 56.2915 29.1048 56.2915 35.781C56.2915 42.4572 56.2673 43.2466 56.146 45.884C56.0349 48.3214 55.6267 49.6462 55.2855 50.5266C54.8308 51.6938 54.2893 52.5266 53.4144 53.4002C52.5394 54.2738 51.7049 54.8158 50.537 55.2702C49.6565 55.6134 48.3305 56.0194 45.8916 56.1302C43.2549 56.2514 42.4628 56.2756 35.7826 56.2756C29.1024 56.2756 28.3125 56.2514 25.6765 56.1302ZM25.4694 10.9322C22.8064 11.0534 20.9867 11.4754 19.3976 12.0934C17.7518 12.7316 16.3585 13.5878 14.9663 14.977C13.5741 16.3662 12.7195 17.7608 12.081 19.4056C11.4626 20.9948 11.0403 22.8124 10.9191 25.4738C10.7958 28.1394 10.7676 28.9916 10.7676 35.7808C10.7676 42.57 10.7958 43.4222 10.9191 46.0878C11.0403 48.7494 11.4626 50.5668 12.081 52.156C12.7195 53.7998 13.5743 55.196 14.9663 56.5846C16.3583 57.9732 17.7518 58.8282 19.3976 59.4682C20.9897 60.0862 22.8064 60.5082 25.4694 60.6294C28.138 60.7506 28.9893 60.7808 35.7826 60.7808C42.5759 60.7808 43.4286 60.7526 46.0958 60.6294C48.759 60.5082 50.5774 60.0862 52.1676 59.4682C53.8124 58.8282 55.2066 57.9738 56.5989 56.5846C57.9911 55.1954 58.8438 53.7998 59.4842 52.156C60.1026 50.5668 60.5268 48.7492 60.6461 46.0878C60.7674 43.4202 60.7956 42.57 60.7956 35.7808C60.7956 28.9916 60.7674 28.1394 60.6461 25.4738C60.5248 22.8122 60.1026 20.9938 59.4842 19.4056C58.8438 17.7618 57.9889 16.3684 56.5989 14.977C55.2088 13.5856 53.8124 12.7316 52.1696 12.0934C50.5775 11.4754 48.7588 11.0514 46.0978 10.9322C43.4306 10.811 42.5779 10.7808 35.7846 10.7808C28.9913 10.7808 28.138 10.809 25.4694 10.9322Z"
+                    fill="url(#paint1_radial_7092_54471)" />
+                  <defs>
+                    <radialGradient id="paint0_radial_7092_54471" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(17.4144 61.017) scale(65.31 65.2708)">
+                      <stop offset="0.09" stop-color="#FA8F21" />
+                      <stop offset="0.78" stop-color="#D82D7E" />
+                    </radialGradient>
+                    <radialGradient id="paint1_radial_7092_54471" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(41.1086 63.257) scale(51.4733 51.4424)">
+                      <stop offset="0.64" stop-color="#8C3AAA" stop-opacity="0" />
+                      <stop offset="1" stop-color="#8C3AAA" />
+                    </radialGradient>
+                  </defs>
+                </svg>
+              </button>
+
+              <button
+                class="w-10 h-10 flex items-center justify-center rounded-lg bg-white group transition-all duration-300">
+                <svg class="transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg"
+                  width="28" height="28" viewBox="0 0 72 72" fill="none">
+                  <path
+                    d="M40.7568 32.1716L59.3704 11H54.9596L38.7974 29.383L25.8887 11H11L30.5205 38.7983L11 61H15.4111L32.4788 41.5869L46.1113 61H61L40.7557 32.1716H40.7568ZM34.7152 39.0433L32.7374 36.2752L17.0005 14.2492H23.7756L36.4755 32.0249L38.4533 34.7929L54.9617 57.8986H48.1865L34.7152 39.0443V39.0433Z"
+                    fill="black" />
+                </svg>
+              </button>
+
+              <button
+                class="w-10 h-10 flex items-center justify-center rounded-lg bg-white group transition-all duration-300">
+                <svg class="rounded-md transition-all duration-300 group-hover:scale-110"
+                  xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M61.03 36.015C61.03 49.8304 49.8304 61.03 36.015 61.03C22.1996 61.03 11 49.8304 11 36.015C11 22.1996 22.1996 11 36.015 11C49.8304 11 61.03 22.1996 61.03 36.015ZM38.4121 28.3392C34.1147 30.1955 21.7235 35.4671 21.7235 35.4671C18.7869 36.6551 20.5058 37.7688 20.5058 37.7688C20.5058 37.7688 23.0127 38.6599 25.1615 39.328C27.3103 39.9963 28.4563 39.2538 28.4563 39.2538C28.4563 39.2538 33.47 35.8384 38.5554 32.2002C42.1366 29.6757 41.2772 31.7547 40.4176 32.6457C38.5554 34.5762 35.4755 37.6204 32.897 40.0706C31.751 41.1101 32.324 42.001 32.8254 42.4465C34.2836 43.7256 37.718 46.0518 39.2773 47.1079C39.7093 47.4005 39.9974 47.5956 40.0596 47.6439C40.4176 47.941 42.4232 49.2774 43.6408 48.9804C44.8584 48.6834 45.0017 46.9757 45.0017 46.9757C45.0017 46.9757 45.9328 40.8873 46.7923 35.3186C46.9515 34.2252 47.1107 33.1548 47.2592 32.1567C47.645 29.5623 47.9582 27.4565 48.0099 26.7058C48.2248 24.1814 45.6463 25.2208 45.6463 25.2208C45.6463 25.2208 40.0596 27.5968 38.4121 28.3392Z"
+                    fill="#34AADF" />
+                </svg>
+              </button>
+            </div> <!--/SOCIAL-->
+
+
+            <p class="mt-8 text-lg font-medium text-pretty text-white sm:text-xl/8">Welcome to <b>Shining Doge</b>, the
+              ultimate fusion of meme culture, crypto innovation, and nostalgia! Inspired by the legendary
+              <b>Dogecoin</b> and the concept of <b>Shiny Pokémon</b>,
+              Shining Doge isn’t just another meme coin—it’s a rare and powerful evolution in the crypto
+              space.
+            </p>
+          </div>
+          <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+            <div
+              class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+              <a href="#buy" class="ShLink">How to buy <span aria-hidden="true">&rarr;</span></a>
+              <a href="#why" class="ShLink">Why $SHDOGE <span aria-hidden="true">&rarr;</span></a>
+              <a href="#roadmap" class="ShLink">Roadmap <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col-reverse gap-1">
+                <dt class="text-base/7 text-white">Launch day</dt>
+                <dd class="text-4xl font-semibold tracking-tight text-white">Feb. 21 </dd>
+              </div>
+              <div class="flex flex-col-reverse gap-1">
+                <dt class="text-base/7 text-white">Launch time</dt>
+                <dd class="text-4xl font-semibold tracking-tight text-white">9pm EST</dd>
+              </div>
+              <div class="flex flex-col-reverse gap-1">
+                <dt class="text-base/7 text-white">Ticker</dt>
+                <dd class="text-4xl font-semibold tracking-tight text-white">$SHDOGE</dd>
+              </div>
+              <div class="flex flex-col-reverse gap-1">
+                <dt class="text-base/7 text-white">Pre-Sale</dt>
+                <dd class="text-4xl font-semibold tracking-tight text-white">
+                  <div class="flex items-center"><span>Active</span><span
+                      class="ml-2 rounded-full bg-green-500 shadow-md pulse" style="width:.75rem;height:.75rem"></span>
+                  </div>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div> <!--/cover-->
+
+
+      <div class="bg-white py-24"
+        style="background:url('/img/image00012.png'); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+        <div class="mx-auto mt-16 max-w-2xl px-6 sm:mt-20 lg:mt-24">
+          <div class="inset-px border border-gray-200 rounded-lg bg-white py-8 px-6">
+
+            <div class="sm:flex py-4 justify-between items-center border-b">
+              <div>
+                <h2 class="font-bold text-2xl">BUY NOW $SHDOGE</h2>
+              </div>
+              <div>
+                <div><span
+                    class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-green-600/20 ring-inset">Pre
+                    sale is now</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex py-4 justify-between border-b">
+              <div>Total Raised</div>
+              <div>
+                <div id="Raised" class="inline">100.000</div> $
+              </div>
+            </div>
+            <div class="flex py-4 mt-4 justify-between border-b">
+              <div>1 $SHDOGE</div>
+              <div>
+                <div id="CurPrice" class="inline">0,00015</div> $
+              </div>
+            </div>
+            <div class="flex py-4 mt-4 justify-between border-b">
+              <div>Current Market Cap<span class="block text-xs">on Pre-Sale</span></div>
+              <div id="CurMktCap">150.000 $</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="buy" class="bg-gray-50 py-24 sm:py-32">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="text-center text-base/7 font-mono">$SHDOGE</h2>
+          <p class="mt-2 text-4xl funnel-800 text-red-800 sm:text-5xl lg:text-balance">
+            How to buy</p>
+          <div>
+            <span
+              class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-green-600/20 ring-inset">Pre
+              sale is now</span>
+          </div>
+          <p class="mt-2 text-lg/8">Just send SOL, USDT, USDC via Solana. <br>Receive the tokens in your address on
+            February 21.</p>
+        </div>
+        <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+          <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+            <div class="relative lg:row-span-2">
+              <div class="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
+              <div
+                class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
+                <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                  <p class="mt-2 text-3xl font-bold max-lg:text-center">Create Wallet
+                  </p>
+                  <p class="my-2 max-w-lg text-sm/6 max-lg:text-center">Download Phantom or your wallet of choice from
+                    the app store or google play for free. <br>Desktop users: download the google chrome extension by
+                    going to Phantom.</p>
+                  <a href="https://phantom.com/"
+                    class="mt-2 inline-flex w-full justify-center rounded-md ring-2 ring-red-800 ring-inset px-3 py-2 text-sm font-semibold text-red-800 hover:bg-red-100">Get
+                    Phantom
+                  </a>
+                </div>
+                <div class="@container relative min-h-[25rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
+                  <div class="absolute top-10 bottom-0 overflow-hidden shadow-2xl">
+                    <img class="size-full object-cover object-top" src="/img/image00007.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div
+                class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 lg:rounded-l-[2rem]">
+              </div>
+            </div>
+            <div class="relative">
+              <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
+              <div
+                class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+                <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                  <p class="mt-2 text-3xl font-bold max-lg:text-center">Get some SOL</p>
+                  <p class="my-2 max-w-lg text-sm/6 max-lg:text-center">Have SOL in your wallet to switch to $SHDOGE. If
+                    you don't have any SOL, you can buy directly on Phantom, transfer from another wallet, or buy on
+                    another exchange and send it to your wallet.</p>
+                  <a href="https://phantom.com/"
+                    class="mt-2 inline-flex w-full justify-center rounded-md ring-2 ring-red-800 ring-inset px-3 py-2 text-sm font-semibold text-red-800 hover:bg-red-100">Buy
+                    SOL
+                  </a>
+                </div>
+                <div class="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
+                  <img class="w-full max-lg:max-w-xs"
+                    src="https://tailwindui.com/plus/img/component-images/bento-03-performance.png" alt="">
+                </div>
+              </div>
+              <div
+                class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-t-[2rem]">
+              </div>
+            </div>
+            <div class="relative max-lg:order-last lg:col-start-2 lg:row-start-2">
+              <div class="absolute inset-px rounded-lg bg-white"></div>
+              <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
+                <!--<div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                  <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Security</p>
+                  <p class="mt-2 max-w-lg text-sm/6 max-lg:text-center">Morbi viverra dui mi arcu sed.
+                    Tellus semper adipiscing suspendisse semper morbi.</p>
+                </div>-->
+                <div class="@container flex flex-1 items-center max-lg:py-6 lg:pb-2 bg-yellow-100">
+                  <div class="px-8 py-3">
+                    <p>You will receive the tokens in your address once they’ll be created, on <b>February 21 st 2025,
+                        21:00-21:15 EST,</b> via Pump.fun.</p>
+                    <p class="mt-8 text-sm font-mono">PLEASE REMEMBER</p>
+                    <p class="mt-1 text-sm font-mono">Do not to send coins from an exchange wallet, as
+                      it may result in the loss of your funds.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5"></div>
+            </div>
+            <div class="relative lg:row-span-2">
+              <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+              <div
+                class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
+                <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                  <p class="mt-2 text-3xl font-bold max-lg:text-center">Send to SHDOGE</p>
+                  <p class="my-2 max-w-lg max-lg:text-center">Send SOL, USDT, USDC via Solana Network to $SHDOGE
+                    address:</p>
+
+                  <div class="">
+                    <div class="">
+                      <input type="text" value="HN7cABqLq46Es1jh92dQQisAq662SmxELLLsHHe4YWr" id="copyText" disabled
+                        class="px-4 py-2 border border-gray-300 bg-gray-200 text-xs text-gray-500 rounded-md"
+                        style="width:100%" />
+
+                    </div>
+                  </div>
+
+                  <div>
+                    <button onclick="copyToClipboard()"
+                      class="mt-2 inline-flex w-full justify-center rounded-md bg-red-700 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-red-800">
+                      Copy address
+                    </button>
+                  </div>
+
+                  <a href="https://help.phantom.com/hc/en-us/articles/15747805781139-How-to-send-SOL-on-Solana-network-to-Phantom-from-Coinbase"
+                    class="mt-2 inline-flex w-full justify-center rounded-md ring-2 ring-red-800 ring-inset px-3 py-2 text-sm font-semibold text-red-800 hover:bg-red-100">How
+                    to send SOL</a>
+                </div>
+
+                <div class="@container relative min-h-[25rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
+                  <div class="absolute top-10 bottom-0 overflow-hidden shadow-2xl">
+                    <img class="size-full object-cover object-top" src="/img/image00006.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div
+                class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="why" class="bg-orange-50 py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl text-center">
+            <h2 class="text-center text-base/7 font-mono">$SHDOGE</h2>
+            <p class="mt-2 text-4xl funnel-800 text-red-800 sm:text-5xl lg:text-balance">
+              Why Invest in Shining Doge?</p>
+            <p class="mt-6 text-lg/8"></p>
+          </div>
+          <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+              <div class="relative pl-16">
+                <dt class="text-base/7 font-semibold">
+                  <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-red-600">
+                    <svg class="size-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
+                    </svg>
+                  </div>
+                  The Next Big Meme Coin
+                </dt>
+                <dd class="mt-2 text-base/7">Dogecoin, Shiba Inu, Baby Doge, and Pepe have all seen
+                  <b>explosive growth</b>, turning early investors into crypto legends. Shining Doge is poised to
+                  follow in their footsteps and become <b>the meme coin of 2025</b>.
+                </dd>
+              </div>
+              <div class="relative pl-16">
+                <dt class="text-base/7 font-semibold">
+                  <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-red-600">
+                    <svg class="size-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m21 7.5-2.25-1.313M21 7.5v2.25m0-2.25-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3 2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75 2.25-1.313M12 21.75V19.5m0 2.25-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+                    </svg>
+                  </div>
+                  Ultra-Rare &amp; Shiny
+                </dt>
+                <dd class="mt-2 text-base/7">Just like Shiny Pokémon are prized among collectors, Shining
+                  Doge is a <b>one-of-a-kind digital asset</b> that stands out in the crowded crypto world.</dd>
+              </div>
+              <div class="relative pl-16">
+                <dt class="text-base/7 font-semibold">
+                  <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-red-600">
+                    <svg class="size-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                    </svg>
+                  </div>
+                  Community-Powered
+                </dt>
+                <dd class="mt-2 text-base/7">The success of meme coins comes from their <b>strong, engaged
+                    communities</b>. Shining Doge is built on the same foundation, ensuring <b>virality and long-
+                    term growth</b>.</dd>
+              </div>
+              <div class="relative pl-16">
+                <dt class="text-base/7 font-semibold">
+                  <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-red-600">
+                    <svg class="size-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                  </div>
+                  The Future of Fun Finance
+                </dt>
+                <dd class="mt-2 text-base/7">Crypto isn’t just about numbers; it’s about <b>culture and
+                    entertainment</b>. Shining Doge brings humor, nostalgia, and financial opportunity together
+                  in a single token.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div id="roadmap" class="bg-white py-24 sm:py-32">
+        <div class="mx-auto px-6 max-w-2xl text-center">
+          <h2 class="text-center text-base/7 font-mono">$SHDOGE</h2>
+          <p class="mt-2 text-4xl funnel-800 text-red-800 sm:text-5xl lg:text-balance">
+            Roadmap</p>
+          <p class="mt-6 text-lg/8">Join the SHDOGE revolution and spread our community to every corner of the
+            world!</p>
+        </div>
+        <div
+          class="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-6 pb-12 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+          <div>
+            <dl class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+              <div class="border-t border-gray-200 pt-4">
+                <dt class="font-bold">Feb. 21, 2025 <br>9:00-9:15pm EST</dt>
+                <dd class="mt-2">Token Launch on Pump.fun
+                  <div class="flex items-center mt-4">
+                    <img src="/img/pumpfun.png" width="auto" height="auto" style="height: 40px;" />
+                  </div>
+                </dd>
+              </div>
+              <div class="border-t border-gray-200 pt-4">
+                <dt class="font-bold">Feb. 21, 2025</dt>
+                <dd class="mt-2">Available on Raydium
+                  <div class="flex items-center mt-4">
+                    <img src="/img/raydium.png" width="auto" height="auto" style="height: 40px;" />
+                  </div>
+                </dd>
+              </div>
+              <div class="border-t border-gray-200 pt-4">
+                <dt class="font-bold">Feb. 23, 2025</dt>
+                <dd class="mt-2">Listing on CoinMarketCap
+                  <div class="flex items-center mt-4">
+                    <img src="/img/coinmc.png" width="auto" height="auto" style="height: 40px;" />
+                  </div>
+                </dd>
+              </div>
+              <div class="border-t border-gray-200 pt-4">
+                <dt class="font-bold">March 2025</dt>
+                <dd class="mt-2">Listing on Centralized Exchanges (CEX)
+                  <div class="flex items-center mt-4">
+                    <img class="mr-2" src="/img/bnb.png" width="auto" height="auto" style="height: 40px;" />
+                    <img class="mr-2" src="/img/bybit.png" width="auto" height="auto" style="height: 24px;" />
+                    <img src="/img/mexc.png" width="auto" height="auto" style="height: 40px;" />
+                  </div>
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+            <img src="/img/image00005.png" alt="" class="rounded-lg bg-gray-100">
+            <img src="/img/image00004.png" alt="" class="rounded-lg bg-gray-100">
+            <img src="/img/image00019.png" alt="" class="rounded-lg bg-gray-100">
+            <img src="/img/image00011.png" alt="" class="rounded-lg bg-gray-100">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bg-white py-24"
+        style="background:url('/img/image00012.png'); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+        <div class="mx-auto mt-16 max-w-2xl px-6 sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <div class="inset-px border border-gray-200 rounded-lg bg-white py-8 px-6">
+            <h2 class="font-bold">2025 and beyond</h2>
+            <p class="mt-2 text-lg font-bold sm:text-2xl lg:text-balance">
+              Bridging the gap between Crypto and Fintech</p>
+            <p class="mt-6">SHDOGE will engage with the startup ecosystem, forming strategic partnerships that connect
+              the
+              crypto world with the fintech sector. We aim to be the bridge between these industries, creating
+              innovative solutions and expanding our reach.</p>
+            <p class="mt-6">Join the SHDOGE revolution and spread our community to every corner of the world!</p>
+
+            <!--SOCIAL-->
+            <div class="w-full h-auto py-8 flex items-center gap-4 flex-wrap">
+              <button
+                class="w-10 h-10 flex items-center justify-center rounded-lg bg-white group transition-all duration-300">
+                <svg class="transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg"
+                  width="28" height="28" viewBox="0 0 72 72" fill="none">
+                  <path
+                    d="M46.4927 38.6403L47.7973 30.3588H39.7611V24.9759C39.7611 22.7114 40.883 20.4987 44.4706 20.4987H48.1756V13.4465C46.018 13.1028 43.8378 12.9168 41.6527 12.8901C35.0385 12.8901 30.7204 16.8626 30.7204 24.0442V30.3588H23.3887V38.6403H30.7204V58.671H39.7611V38.6403H46.4927Z"
+                    fill="#337FFF" />
+                </svg>
+              </button>
+
+              <button
+                class="w-10 h-10 flex items-center justify-center group rounded-lg bg-white group transition-all duration-300">
+                <svg class="transition-all duration-300 group-hover:scale-110" width="28" height="28"
+                  viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M27.4456 35.7808C27.4456 31.1786 31.1776 27.4468 35.7826 27.4468C40.3875 27.4468 44.1216 31.1786 44.1216 35.7808C44.1216 40.383 40.3875 44.1148 35.7826 44.1148C31.1776 44.1148 27.4456 40.383 27.4456 35.7808ZM22.9377 35.7808C22.9377 42.8708 28.6883 48.618 35.7826 48.618C42.8768 48.618 48.6275 42.8708 48.6275 35.7808C48.6275 28.6908 42.8768 22.9436 35.7826 22.9436C28.6883 22.9436 22.9377 28.6908 22.9377 35.7808ZM46.1342 22.4346C46.1339 23.0279 46.3098 23.608 46.6394 24.1015C46.9691 24.595 47.4377 24.9797 47.9861 25.2069C48.5346 25.4342 49.1381 25.4939 49.7204 25.3784C50.3028 25.2628 50.8378 24.9773 51.2577 24.5579C51.6777 24.1385 51.9638 23.6041 52.0799 23.0222C52.1959 22.4403 52.1367 21.8371 51.9097 21.2888C51.6828 20.7406 51.2982 20.2719 50.8047 19.942C50.3112 19.6122 49.7309 19.436 49.1372 19.4358H49.136C48.3402 19.4361 47.5771 19.7522 47.0142 20.3144C46.4514 20.8767 46.1349 21.6392 46.1342 22.4346ZM25.6765 56.1302C23.2377 56.0192 21.9121 55.6132 21.0311 55.2702C19.8632 54.8158 19.0299 54.2746 18.1538 53.4002C17.2777 52.5258 16.7354 51.6938 16.2827 50.5266C15.9393 49.6466 15.533 48.3214 15.4222 45.884C15.3009 43.2488 15.2767 42.4572 15.2767 35.781C15.2767 29.1048 15.3029 28.3154 15.4222 25.678C15.5332 23.2406 15.9425 21.918 16.2827 21.0354C16.7374 19.8682 17.2789 19.0354 18.1538 18.1598C19.0287 17.2842 19.8612 16.7422 21.0311 16.2898C21.9117 15.9466 23.2377 15.5406 25.6765 15.4298C28.3133 15.3086 29.1054 15.2844 35.7826 15.2844C42.4598 15.2844 43.2527 15.3106 45.8916 15.4298C48.3305 15.5408 49.6539 15.9498 50.537 16.2898C51.7049 16.7422 52.5382 17.2854 53.4144 18.1598C54.2905 19.0342 54.8308 19.8682 55.2855 21.0354C55.6289 21.9154 56.0351 23.2406 56.146 25.678C56.2673 28.3154 56.2915 29.1048 56.2915 35.781C56.2915 42.4572 56.2673 43.2466 56.146 45.884C56.0349 48.3214 55.6267 49.6462 55.2855 50.5266C54.8308 51.6938 54.2893 52.5266 53.4144 53.4002C52.5394 54.2738 51.7049 54.8158 50.537 55.2702C49.6565 55.6134 48.3305 56.0194 45.8916 56.1302C43.2549 56.2514 42.4628 56.2756 35.7826 56.2756C29.1024 56.2756 28.3125 56.2514 25.6765 56.1302ZM25.4694 10.9322C22.8064 11.0534 20.9867 11.4754 19.3976 12.0934C17.7518 12.7316 16.3585 13.5878 14.9663 14.977C13.5741 16.3662 12.7195 17.7608 12.081 19.4056C11.4626 20.9948 11.0403 22.8124 10.9191 25.4738C10.7958 28.1394 10.7676 28.9916 10.7676 35.7808C10.7676 42.57 10.7958 43.4222 10.9191 46.0878C11.0403 48.7494 11.4626 50.5668 12.081 52.156C12.7195 53.7998 13.5743 55.196 14.9663 56.5846C16.3583 57.9732 17.7518 58.8282 19.3976 59.4682C20.9897 60.0862 22.8064 60.5082 25.4694 60.6294C28.138 60.7506 28.9893 60.7808 35.7826 60.7808C42.5759 60.7808 43.4286 60.7526 46.0958 60.6294C48.759 60.5082 50.5774 60.0862 52.1676 59.4682C53.8124 58.8282 55.2066 57.9738 56.5989 56.5846C57.9911 55.1954 58.8438 53.7998 59.4842 52.156C60.1026 50.5668 60.5268 48.7492 60.6461 46.0878C60.7674 43.4202 60.7956 42.57 60.7956 35.7808C60.7956 28.9916 60.7674 28.1394 60.6461 25.4738C60.5248 22.8122 60.1026 20.9938 59.4842 19.4056C58.8438 17.7618 57.9889 16.3684 56.5989 14.977C55.2088 13.5856 53.8124 12.7316 52.1696 12.0934C50.5775 11.4754 48.7588 11.0514 46.0978 10.9322C43.4306 10.811 42.5779 10.7808 35.7846 10.7808C28.9913 10.7808 28.138 10.809 25.4694 10.9322Z"
+                    fill="url(#paint0_radial_7092_54471)" />
+                  <path
+                    d="M27.4456 35.7808C27.4456 31.1786 31.1776 27.4468 35.7826 27.4468C40.3875 27.4468 44.1216 31.1786 44.1216 35.7808C44.1216 40.383 40.3875 44.1148 35.7826 44.1148C31.1776 44.1148 27.4456 40.383 27.4456 35.7808ZM22.9377 35.7808C22.9377 42.8708 28.6883 48.618 35.7826 48.618C42.8768 48.618 48.6275 42.8708 48.6275 35.7808C48.6275 28.6908 42.8768 22.9436 35.7826 22.9436C28.6883 22.9436 22.9377 28.6908 22.9377 35.7808ZM46.1342 22.4346C46.1339 23.0279 46.3098 23.608 46.6394 24.1015C46.9691 24.595 47.4377 24.9797 47.9861 25.2069C48.5346 25.4342 49.1381 25.4939 49.7204 25.3784C50.3028 25.2628 50.8378 24.9773 51.2577 24.5579C51.6777 24.1385 51.9638 23.6041 52.0799 23.0222C52.1959 22.4403 52.1367 21.8371 51.9097 21.2888C51.6828 20.7406 51.2982 20.2719 50.8047 19.942C50.3112 19.6122 49.7309 19.436 49.1372 19.4358H49.136C48.3402 19.4361 47.5771 19.7522 47.0142 20.3144C46.4514 20.8767 46.1349 21.6392 46.1342 22.4346ZM25.6765 56.1302C23.2377 56.0192 21.9121 55.6132 21.0311 55.2702C19.8632 54.8158 19.0299 54.2746 18.1538 53.4002C17.2777 52.5258 16.7354 51.6938 16.2827 50.5266C15.9393 49.6466 15.533 48.3214 15.4222 45.884C15.3009 43.2488 15.2767 42.4572 15.2767 35.781C15.2767 29.1048 15.3029 28.3154 15.4222 25.678C15.5332 23.2406 15.9425 21.918 16.2827 21.0354C16.7374 19.8682 17.2789 19.0354 18.1538 18.1598C19.0287 17.2842 19.8612 16.7422 21.0311 16.2898C21.9117 15.9466 23.2377 15.5406 25.6765 15.4298C28.3133 15.3086 29.1054 15.2844 35.7826 15.2844C42.4598 15.2844 43.2527 15.3106 45.8916 15.4298C48.3305 15.5408 49.6539 15.9498 50.537 16.2898C51.7049 16.7422 52.5382 17.2854 53.4144 18.1598C54.2905 19.0342 54.8308 19.8682 55.2855 21.0354C55.6289 21.9154 56.0351 23.2406 56.146 25.678C56.2673 28.3154 56.2915 29.1048 56.2915 35.781C56.2915 42.4572 56.2673 43.2466 56.146 45.884C56.0349 48.3214 55.6267 49.6462 55.2855 50.5266C54.8308 51.6938 54.2893 52.5266 53.4144 53.4002C52.5394 54.2738 51.7049 54.8158 50.537 55.2702C49.6565 55.6134 48.3305 56.0194 45.8916 56.1302C43.2549 56.2514 42.4628 56.2756 35.7826 56.2756C29.1024 56.2756 28.3125 56.2514 25.6765 56.1302ZM25.4694 10.9322C22.8064 11.0534 20.9867 11.4754 19.3976 12.0934C17.7518 12.7316 16.3585 13.5878 14.9663 14.977C13.5741 16.3662 12.7195 17.7608 12.081 19.4056C11.4626 20.9948 11.0403 22.8124 10.9191 25.4738C10.7958 28.1394 10.7676 28.9916 10.7676 35.7808C10.7676 42.57 10.7958 43.4222 10.9191 46.0878C11.0403 48.7494 11.4626 50.5668 12.081 52.156C12.7195 53.7998 13.5743 55.196 14.9663 56.5846C16.3583 57.9732 17.7518 58.8282 19.3976 59.4682C20.9897 60.0862 22.8064 60.5082 25.4694 60.6294C28.138 60.7506 28.9893 60.7808 35.7826 60.7808C42.5759 60.7808 43.4286 60.7526 46.0958 60.6294C48.759 60.5082 50.5774 60.0862 52.1676 59.4682C53.8124 58.8282 55.2066 57.9738 56.5989 56.5846C57.9911 55.1954 58.8438 53.7998 59.4842 52.156C60.1026 50.5668 60.5268 48.7492 60.6461 46.0878C60.7674 43.4202 60.7956 42.57 60.7956 35.7808C60.7956 28.9916 60.7674 28.1394 60.6461 25.4738C60.5248 22.8122 60.1026 20.9938 59.4842 19.4056C58.8438 17.7618 57.9889 16.3684 56.5989 14.977C55.2088 13.5856 53.8124 12.7316 52.1696 12.0934C50.5775 11.4754 48.7588 11.0514 46.0978 10.9322C43.4306 10.811 42.5779 10.7808 35.7846 10.7808C28.9913 10.7808 28.138 10.809 25.4694 10.9322Z"
+                    fill="url(#paint1_radial_7092_54471)" />
+                  <defs>
+                    <radialGradient id="paint0_radial_7092_54471" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(17.4144 61.017) scale(65.31 65.2708)">
+                      <stop offset="0.09" stop-color="#FA8F21" />
+                      <stop offset="0.78" stop-color="#D82D7E" />
+                    </radialGradient>
+                    <radialGradient id="paint1_radial_7092_54471" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(41.1086 63.257) scale(51.4733 51.4424)">
+                      <stop offset="0.64" stop-color="#8C3AAA" stop-opacity="0" />
+                      <stop offset="1" stop-color="#8C3AAA" />
+                    </radialGradient>
+                  </defs>
+                </svg>
+              </button>
+
+              <button
+                class="w-10 h-10 flex items-center justify-center rounded-lg bg-white group transition-all duration-300">
+                <svg class="transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg"
+                  width="28" height="28" viewBox="0 0 72 72" fill="none">
+                  <path
+                    d="M40.7568 32.1716L59.3704 11H54.9596L38.7974 29.383L25.8887 11H11L30.5205 38.7983L11 61H15.4111L32.4788 41.5869L46.1113 61H61L40.7557 32.1716H40.7568ZM34.7152 39.0433L32.7374 36.2752L17.0005 14.2492H23.7756L36.4755 32.0249L38.4533 34.7929L54.9617 57.8986H48.1865L34.7152 39.0443V39.0433Z"
+                    fill="black" />
+                </svg>
+              </button>
+
+              <button
+                class="w-10 h-10 flex items-center justify-center rounded-lg bg-white group transition-all duration-300">
+                <svg class="rounded-md transition-all duration-300 group-hover:scale-110"
+                  xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M61.03 36.015C61.03 49.8304 49.8304 61.03 36.015 61.03C22.1996 61.03 11 49.8304 11 36.015C11 22.1996 22.1996 11 36.015 11C49.8304 11 61.03 22.1996 61.03 36.015ZM38.4121 28.3392C34.1147 30.1955 21.7235 35.4671 21.7235 35.4671C18.7869 36.6551 20.5058 37.7688 20.5058 37.7688C20.5058 37.7688 23.0127 38.6599 25.1615 39.328C27.3103 39.9963 28.4563 39.2538 28.4563 39.2538C28.4563 39.2538 33.47 35.8384 38.5554 32.2002C42.1366 29.6757 41.2772 31.7547 40.4176 32.6457C38.5554 34.5762 35.4755 37.6204 32.897 40.0706C31.751 41.1101 32.324 42.001 32.8254 42.4465C34.2836 43.7256 37.718 46.0518 39.2773 47.1079C39.7093 47.4005 39.9974 47.5956 40.0596 47.6439C40.4176 47.941 42.4232 49.2774 43.6408 48.9804C44.8584 48.6834 45.0017 46.9757 45.0017 46.9757C45.0017 46.9757 45.9328 40.8873 46.7923 35.3186C46.9515 34.2252 47.1107 33.1548 47.2592 32.1567C47.645 29.5623 47.9582 27.4565 48.0099 26.7058C48.2248 24.1814 45.6463 25.2208 45.6463 25.2208C45.6463 25.2208 40.0596 27.5968 38.4121 28.3392Z"
+                    fill="#34AADF" />
+                </svg>
+              </button>
+            </div> <!--/SOCIAL-->
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </section>
+  </main>
+
+  <!-- JavaScript for Mobile Menu Toggle 
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+  </script>-->
+
+  <script>
+    function copyToClipboard() {
+      const inputField = document.getElementById("copyText");
+      navigator.clipboard.writeText(inputField.value).then(() => {
+        alert("Copied: " + inputField.value);
+      });
+    }
+  </script>
+
+</body>
+
+</html>
