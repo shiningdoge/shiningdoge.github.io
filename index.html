@@ -264,9 +264,11 @@
               </div>
             </div>
             <div class="flex py-4 justify-between border-b">
-              <div>Total Raised</div>
+              <div>Total Raised <div class="text-xs">24h %</div>
+              </div>
               <div>
                 <div id="Raised" class="inline">21.137</div> $
+                <div class="text-right text-xs text-green-500 font-bold">+18%</div>
               </div>
             </div>
             <div class="flex py-4 mt-4 justify-between border-b">
@@ -276,7 +278,8 @@
               </div>
             </div>
             <div class="flex py-4 mt-4 justify-between border-b">
-              <div>Current Market Cap<span class="block text-xs">on Pre-Sale</span></div>
+              <div>Current Market Cap<div class="text-xs">on Pre-Sale</div>
+              </div>
               <div id="CurMktCap">150.000 $</div>
             </div>
 
@@ -305,12 +308,26 @@
               sale is now</span>
           </div>
           <p class="my-2 text-lg/8">Just send SOL, USDT, USDC via Solana to this address:</p>
-            <div class="mx-auto max-w-sm">
-              <input type="text" value="EBxa89SCndj2F6qyFNGMt4WzFYzQQUicx9h6QXDtfxVk" id="copyText" disabled
-                class="px-4 py-2 border border-gray-300 bg-gray-200 text-xs text-gray-500 rounded-md"
-                style="width:100%" />
+          <div class="mx-auto max-w-sm">
+            <input type="text" value="EBxa89SCndj2F6qyFNGMt4WzFYzQQUicx9h6QXDtfxVk" id="copyText" disabled
+              class="px-4 py-2 border border-gray-300 bg-gray-200 text-xs text-gray-500 rounded-md"
+              style="width:100%" />
+          </div>
+          <p class="mt-2 text-xs">Receive the tokens in your address on <b>February 21</b>.</p>
+
+          <div class="md:flex mt-8">
+            <div class="flex-1 text-left px-2">
+              <label for="Shdoge" class="block text-sm/6 font-medium text-red-900">You Pay (USD)</label>
+              <input id="Usd" type="number" class="block border rounded-lg p-2 w-full"
+                value="" placeholder="Enter USD">
             </div>
-            <p class="mt-2">Receive the tokens in your address on February 21.</p>
+            <div class="flex-1 text-left px-2">
+              <label for="Shdoge" class="block text-sm/6 font-medium text-red-900">You Receive ($SHDOGE)</label>
+              <input id="Shdoge" type="number" class="block border rounded-lg p-2 w-full"
+                value="" placeholder="Enter SHDOGE">
+            </div>
+          </div>
+
         </div>
         <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
           <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
@@ -656,13 +673,6 @@
   <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 
   <script>
-    /// QUI
-    document.getElementById("Raised").innerText = "21.000";
-    ///
-
-    document.getElementById("Usd").value = 150;
-    document.getElementById("Shdoge").value = 1000000;
-
     document.getElementById("Usd").addEventListener("input", function () {
       let usdValue = parseFloat(this.value) || 0;
       document.getElementById("Shdoge").value = Math.floor(usdValue / 0.00015);
